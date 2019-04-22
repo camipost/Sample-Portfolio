@@ -1,0 +1,40 @@
+
+*{
+  font-size: 18px;
+}
+
+/*header style*/
+header {
+  display: flex;
+}
+
+.logo {
+  flex: 1;
+}
+
+.name {
+  flex-grow: 8;
+  text-align: center;
+}
+
+.navButton {
+  flex: 1;
+  text-align: right;
+}
+/* end of header styles*/
+
+/* Main Content style */
+main {
+  min-height: 200px;
+  border: 1px solid black;
+}
+/* end of main content style*/
+
+/* footer style */
+footer {
+  text-align: center;
+  /*background-image: url('../images/10xgrid.png')*/
+}
+
+
+/* end of footer styles */
