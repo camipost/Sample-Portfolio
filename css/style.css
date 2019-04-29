@@ -11,6 +11,9 @@ header {
 .logo {
   flex: 1;
 }
+.logoImage img {
+  width: 100%;
+}
 
 .name {
   flex-grow: 8;
@@ -37,6 +40,7 @@ nav ul .menu {
   position: absolute;
   right: 0px;
   text-align: right;
+
 }
 
 nav:hover ul{
@@ -47,8 +51,19 @@ nav:hover ul{
 /* Main Content style */
 main {
   min-height: 200px;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
 }
+.profileimage {
+  text-align: center;
+}
+.profileimage img{
+  width: 80%;
+  border-radius: 50%;
+
+}
+
+
+
 /* end of main content style*/
 
 /* footer style */
