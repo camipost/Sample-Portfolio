@@ -57,5 +57,9 @@ footer {
   /*background-image: url('../images/10xgrid.png')*/
 }
 
+.SocialMedia i {
+  padding: 0 .5rem;
+}
+
 
 /* end of footer styles */
