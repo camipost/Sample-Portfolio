@@ -6,23 +6,31 @@
 /*header style*/
 header {
   display: flex;
+  background-color: white;
 }
 
 .logo {
   flex: 1;
 }
-.logoImage img {
+.logoimage img {
   width: 100%;
 }
 
 .name {
   flex-grow: 8;
   text-align: center;
+  font-family: 'Raleway';
+  font-weight: bold;
+font-stretch: expanded;
+font-size: 25px;
 }
-
+/*body {
+  background-color: #f7eefa;
+}*/
 nav {
   position: relative;
   flex:1;
+  font-family: 'Raleway';
 }
 
 
@@ -32,14 +40,17 @@ nav {
   text-align: right;
 }
 
-nav ul .menu {
+nav ul.menu {
   margin: 0;
-  padding: 0;
+  padding: 10px;
   list-style: none;
   display: none;
   position: absolute;
   right: 0px;
   text-align: right;
+  font-family: 'Raleway';
+  /*border: 1px solid black;*/
+  background-color: #D3D3D3;
 
 }
 
@@ -51,13 +62,15 @@ nav:hover ul{
 /* Main Content style */
 main {
   min-height: 200px;
+  font-family: 'Raleway';
   /*border: 1px solid black;*/
 }
 .profileimage {
   text-align: center;
+  transform:rotateY(180deg);
 }
 .profileimage img{
-  width: 80%;
+  width: 60%;
   border-radius: 50%;
 }
 
@@ -68,13 +81,18 @@ main {
 /* footer style */
 footer {
   text-align: center;
+  font-family: 'Raleway';
   /*background-image: url('../images/10xgrid.png')*/
+  padding: 10px; 
 }
 
 .SocialMedia i {
   padding: 0 .5rem;
 }
-
+.contact a{
+  text-decoration: none;
+  color: black;
+}
 
 /* end of footer styles */
 
@@ -82,16 +100,20 @@ footer {
 @media screen and (min-width: 800px) {
   section {
     display: flex;
+    flex-direction: row-reverse;
   }
-  .profileImage {
+  .profileimage {
     flex:1;
-    text-align: left;
+    transform:rotateY(0deg);
   }
   .profileimage img{
-    width: 90%;
+    width: 60%;
 
   }
-  .aboutme {
+  main{
+    text-align: center;
+  }
+  .aboutMe {
     flex: 1;
   }
   footer {
